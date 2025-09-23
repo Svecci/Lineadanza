@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lineadanza</title>
+	<!-- Bootstrap CSS + Icons -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+	<!-- Keep your stylesheet -->
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body tabindex="0">
+	<!-- Navbar -->
+	<nav id="mainNav" class="navbar navbar-expand-lg fixed-top py-3">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="./Immagini/Loghi/Logo1.png" alt="Lineadanza" height="36">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Menu">
+				<i class="bi bi-list fs-1 text-white"></i>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navContent">
+				<ul class="navbar-nav gap-lg-2">
+					<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="staff.html">Staff</a></li>
+					<li class="nav-item"><a class="nav-link" href="corsi-orari.html">Corsi & Orari</a></li>
+					<li class="nav-item"><a class="nav-link" href="galleria.html">Galleria</a></li>
+					<li class="nav-item"><a class="nav-link" href="info.html">Info</a></li>
+					<li class="nav-item"><a class="nav-link" href="contatti.html">Contatti</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Hero -->
+	<header id="home" class="hero">
+		<div class="container position-relative">
+			<div class="row justify-content-center">
+				<div class="col-12 col-lg-10 reveal text-white">
+					<h1>Movimento, ritmo, emozione. Lineadanza.</h1>
+					<p class="lead mt-3 mb-4">Scuola di danza moderna e classica. Corsi per tutte le età, eventi e spettacoli.</p>
+					<div class="d-flex gap-2 flex-wrap justify-content-center">
+						<a href="#courses" class="btn btn-cyan btn-lg px-4">Scopri i corsi</a>
+						<a href="#contact" class="btn btn-outline-light btn-lg px-4">Contattaci</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Chi siamo -->
+	<section id="about" class="py-5 py-lg-6">
+		<div class="container">
+			<div class="row align-items-center g-4 g-lg-5">
+				<div class="col-12 col-lg-6 order-lg-2">
+					<div class="ratio ratio-4x3 rounded-4 overflow-hidden reveal" style="background: linear-gradient(135deg, rgba(0,199,217,.25), rgba(0,199,217,.05)); border: 1px solid rgba(0,0,0,.06);">
+						<!-- Foto reale al posto del background -->
+						<div class="position-absolute top-0 start-0 w-100 h-100">
+							<img src="./Immagini/Loghi/Logo2.png" alt="La nostra sala danza" class="w-100 h-100" style="object-fit: cover;">
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 order-lg-1 reveal">
+					<h2 class="section-title mb-3">Chi siamo</h2>
+					<p class="section-subtitle mb-3">Una comunità dedicata alla crescita artistica, tecnica e personale attraverso la danza.</p>
+					<ul class="list-unstyled">
+						<li class="d-flex align-items-start mb-2"><i class="bi bi-check2-circle text-cyan me-2"></i> Insegnanti qualificati e percorsi su misura</li>
+						<li class="d-flex align-items-start mb-2"><i class="bi bi-check2-circle text-cyan me-2"></i> Sale attrezzate e sicure</li>
+						<li class="d-flex align-items-start"><i class="bi bi-check2-circle text-cyan me-2"></i> Spettacoli, workshop e stage durante l’anno</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Corsi -->
+	<section id="courses" class="py-5 bg-light">
+		<div class="container">
+			<div class="text-center mb-5">
+				<h2 class="section-title">I nostri corsi</h2>
+				<p class="section-subtitle">Dalla propedeutica alla formazione avanzata.</p>
+			</div>
+			<div class="row g-4">
+				<div class="col-12 col-md-6 col-lg-3 reveal">
+					<div class="card h-100 p-3">
+						<div class="icon mb-3"><i class="bi bi-heart-pulse"></i></div>
+						<h5>Moderna</h5>
+						<p class="mb-3">Tecnica, espressività e lavoro sul corpo in libertà.</p>
+						<a href="#contact" class="link-offset-2 text-cyan">Info e iscrizioni <i class="bi bi-arrow-right"></i></a>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 reveal">
+					<div class="card h-100 p-3">
+						<div class="icon mb-3"><i class="bi bi-peace"></i></div>
+						<h5>Classica</h5>
+						<p class="mb-3">Solida base tecnica e postura con metodo progressivo.</p>
+						<a href="#contact" class="link-offset-2 text-cyan">Info e iscrizioni <i class="bi bi-arrow-right"></i></a>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 reveal">
+					<div class="card h-100 p-3">
+						<div class="icon mb-3"><i class="bi bi-lightning-charge"></i></div>
+						<h5>Hip Hop</h5>
+						<p class="mb-3">Energia, ritmo e stile per tutte le età.</p>
+						<a href="#contact" class="link-offset-2 text-cyan">Info e iscrizioni <i class="bi bi-arrow-right"></i></a>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 reveal">
+					<div class="card h-100 p-3">
+						<div class="icon mb-3"><i class="bi bi-stars"></i></div>
+						<h5>Baby e Junior</h5>
+						<p class="mb-3">Percorsi ludici e formativi per iniziare con il sorriso.</p>
+						<a href="#contact" class="link-offset-2 text-cyan">Info e iscrizioni <i class="bi bi-arrow-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Galleria -->
+	<section id="gallery" class="py-5">
+		<div class="container">
+			<div class="text-center mb-4">
+				<h2 class="section-title">Galleria</h2>
+				<p class="section-subtitle">Scatti dai nostri corsi ed eventi.</p>
+			</div>
+			<div id="galleryCarousel" class="carousel slide reveal" data-bs-ride="carousel">
+				<div class="carousel-inner rounded-4 overflow-hidden shadow-sm">
+					<div class="carousel-item active">
+						<img class="d-block w-100" src="./Immagini/GalleriaHome/1-min.jpg" alt="Galleria 1" loading="lazy">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="./Immagini/GalleriaHome/2-min.jpg" alt="Galleria 2" loading="lazy">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="./Immagini/GalleriaHome/3-min.jpg" alt="Galleria 3" loading="lazy">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="./Immagini/GalleriaHome/4-min.jpg" alt="Galleria 4" loading="lazy">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="./Immagini/GalleriaHome/5-min.jpg" alt="Galleria 5" loading="lazy">
+					</div>
+					<!-- Duplica un blocco .carousel-item e aggiorna il nome file per aggiungere altre foto presenti in Immagini/homegallery -->
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Precedente</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Successivo</span>
+				</button>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Footer -->
+	<footer class="py-4">
+		<div class="container">
+			<div class="row g-3 small lh-sm">
+				<div class="col-12 col-md-4">
+					<div class="fw-bold text-uppercase mb-2">a.s.d LINEADANZA</div>
+					<div>Via T. M. CANEPARI 1, 7</div>
+					<div>16159 GENOVA</div>
+					<div>C.F. 95127040103</div>
+					<div>Cellulare e Whatsapp: 331 1064346</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="fw-bold text-uppercase mb-2">Contatti</div>
+					<div><a href="https://www.lineadanza.it" target="_blank" rel="noopener">www.lineadanza.it</a></div>
+					<div>E-mail: <a href="mailto:info@lineadanza.it">info@lineadanza.it</a></div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="fw-bold text-uppercase mb-2">Crediti</div>
+					<div>webmaster e videomaking</div>
+					<div>Fabrizio D'Amore</div>
+					<div class="mt-2 text-uppercase">fotografia</div>
+					<div>Luca Sebellin, Jgor Schintu, Elena Boccone</div>
+					<div class="mt-2">Copyright 2009 - 2020 A.S.D. LINEADANZA</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
