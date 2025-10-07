@@ -1,0 +1,114 @@
+/* Sticky footer: keeps footer at bottom on short pages */
+html, body {
+	/* ensure full-height context */
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	/* viewport-height safe units with fallbacks */
+	min-height: 100vh;
+	min-height: 100svh;
+	min-height: 100dvh;
+}
+
+/* Push footer to the bottom when content is short */
+body > footer {
+	margin-top: auto;
+	width: 100%;
+}
+
+/* Navbar: base text black, cyan on hover */
+.navbar .nav-link { color: #000 !important; }
+.navbar .nav-link:hover,
+.navbar .nav-link:focus { color: var(--ciano) !important; }
+.navbar .navbar-brand { color: #000 !important; }
+.navbar .navbar-toggler i { color: #000 !important; }
+
+
+/* Smartphone adaptations */
+@media (max-width: 575.98px) {
+	/* Navbar: compact and readable on mobile */
+	.navbar .navbar-brand img { height: 28px; width: auto; }
+	.navbar .nav-link { padding: .6rem 0; font-size: .95rem; }
+
+	/* Ensure collapsed menu contrasts and fills width */
+	.navbar .navbar-collapse {
+		background: #fff;
+		border-top: 1px solid rgba(0,0,0,.08);
+		padding: .25rem 1rem 1rem;
+	}
+
+	/* Footer: stack and center */
+	footer .row > [class^="col-"] { text-align: center; }
+	footer .row { row-gap: .5rem !important; }
+}
+
+/* Smartphone: more readable and decorated footer */
+@media (max-width: 575.98px) {
+	/* Slightly larger, more legible text */
+	footer { font-size: .95rem; line-height: 1.4; }
+
+	/* Turn each stacked column into a compact card */
+	footer .row { row-gap: .75rem !important; }
+	footer .row > [class^="col-"] {
+		text-align: center;
+		background: rgba(0,199,217,.05);
+		border: 1px solid rgba(0,0,0,.06);
+		border-radius: 12px;
+		padding: .75rem 1rem;
+		box-shadow: 0 6px 18px rgba(0,0,0,.06);
+	}
+
+	/* Section titles with cyan accent and divider */
+	footer .fw-bold.text-uppercase {
+		color: var(--ciano);
+		letter-spacing: .4px;
+		margin-bottom: .25rem;
+	}
+	footer .fw-bold.text-uppercase::after {
+		content: "";
+		display: block;
+		width: 48px;
+		height: 2px;
+		margin: .35rem auto 0;
+		background: var(--ciano);
+		border-radius: 2px;
+	}
+
+	/* Links and icons: clearer affordance */
+	footer a { text-decoration: none; border-bottom: 1px dotted transparent; }
+	footer a:hover, footer a:focus { border-bottom-color: var(--ciano); }
+	footer .bi { font-size: 1.25rem; transition: color .2s ease; }
+	footer a:hover .bi, footer a:focus .bi { color: var(--ciano); }
+}
+
+/* Smartphones: add more space from the edges for the footer */
+@media (max-width: 575.98px) {
+	footer .container {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+	footer .row {
+		row-gap: 1rem !important;
+		padding-left: .5rem;
+		padding-right: .5rem;
+	}
+	footer .row > [class^="col-"] {
+		padding: 1rem 1.25rem;   /* more internal space */
+		margin-inline: .25rem;   /* avoid sticking to edges */
+	}
+}
+
+/* Smartphones: center social icons in their card */
+@media (max-width: 575.98px) {
+	footer .d-flex.align-items-center.gap-3 {
+		justify-content: center !important;
+		width: 100%;
+	}
+}
+
+
+
+
