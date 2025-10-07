@@ -123,6 +123,11 @@ footer a:hover { color: #fff; opacity: 1; }
 	.reveal { transition: none !important; }
 }
 
+
+
+	
+
+
 /* Smartphone: more readable and decorated footer */
 @media (max-width: 575.98px) {
 	/* Slightly larger, more legible text */
@@ -138,6 +143,10 @@ footer a:hover { color: #fff; opacity: 1; }
 		padding: .75rem 1rem;
 		box-shadow: 0 6px 18px rgba(0,0,0,.06);
 	}
+
+	/* Footer: stack and center */
+	footer .row > [class^="col-"] { text-align: center; }
+	footer .row { row-gap: .5rem !important; }
 
 	/* Section titles with cyan accent and divider */
 	footer .fw-bold.text-uppercase {
