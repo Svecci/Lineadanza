@@ -12,7 +12,7 @@ a { text-decoration: none; }
 	transition: background-color .3s ease, box-shadow .3s ease, padding .2s ease;
 	background: transparent;
 }
-.navbar .nav-link { color: #fff; opacity: .9; }
+.navbar .nav-link { color: #000000; opacity: .9; }
 .navbar .nav-link:hover,
 .navbar .nav-link.active { color: var(--ciano); opacity: 1; }
 .navbar.scrolled {
@@ -42,13 +42,13 @@ a { text-decoration: none; }
 	display: grid;
 	place-items: center;
 	text-align: center;
-	color: #fff;
+	color: #ffffff;
 	position: relative;
 	overflow: hidden;
 	background:
-		radial-gradient(80vw 80vw at 80% -10%, rgba(0, 199, 217, .35), transparent 60%),
-		radial-gradient(70vw 70vw at -10% 110%, rgba(0, 199, 217, .35), transparent 60%),
-		linear-gradient(180deg, #0a0f14 0%, #081116 100%);
+		radial-gradient(80vw 80vw at 80% -10%, rgba(0, 199, 217, 0.698), transparent 60%),
+		radial-gradient(70vw 70vw at -10% 110%, rgba(5, 157, 171, 0.745), transparent 60%),
+		linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
 }
 .hero h1 { font-size: clamp(2.2rem, 6vw, 4rem); font-weight: 800; line-height: 1.1; }
 .hero p.lead { opacity: .9; }
